@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sprint Manager</h1>
+
+        <section>
+            <h2>Nuevo Sprint</h2>
+            <input id="sprint-nombre" placeholder="Nombre">
+            <input id="sprint-inicio" type="date">
+            <input id="sprint-fin" type="date">
+            <button onclick="crearSprint()">Crear Sprint</button>
+        </section>
+
+        <section>
+            <h2>Historias de Usuario</h2>
+            <input id="story-desc" placeholder="Descripción">
+            <input id="story-est" type="number" placeholder="Estimación">
+            <button onclick="crearHistoria()">Agregar Historia</button>
+        </section>
+
+        <section>
+            <h2>Equipo</h2>
+            <input id="team-nombre" placeholder="Nombre">
+            <input id="team-rol" placeholder="Rol">
+            <button onclick="crearMiembro()">Agregar Miembro</button>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
